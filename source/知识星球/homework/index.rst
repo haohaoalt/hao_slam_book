@@ -8,6 +8,7 @@
   hw02
   hw03
   hw04
+  trypandoc
   hw05
   hw06
 
