@@ -4,6 +4,13 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+import sys
+import os
+import shlex
+sys.path.insert(0, os.path.abspath('..'))
+import recommonmark
+
+
 
 project = 'slam_docs'
 copyright = '2022, Hao Zhang'
