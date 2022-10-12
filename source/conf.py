@@ -2,7 +2,6 @@
 #
 # For the full list of built-in configuration values, see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
-pip install recommonmark
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
@@ -13,7 +12,7 @@ release = 'v1.0'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
-
+extensions = ['recommonmark'] 
 from recommonmark.parser import CommonMarkParser
 source_parsers = {
     '.md': CommonMarkParser,
@@ -21,7 +20,7 @@ source_parsers = {
 source_suffix = ['.rst', '.md']
 
 # extensions = []
-extensions = ['recommonmark'] 
+
 
 templates_path = ['_templates']
 exclude_patterns = []
